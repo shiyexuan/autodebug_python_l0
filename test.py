@@ -3,5 +3,7 @@
 from sort import bub_sort
 
 nums = [5, 3, 8, 2, 1]
-bubble_sort(nums)
+
+bub_sort(nums)
+
 print("排序后的数组:", nums)
