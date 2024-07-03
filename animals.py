@@ -16,7 +16,7 @@ class Zoo:
     def __init__(self, list):
         self.list = list
 
-    def len(self):
+    def __len__(self):
         return len(self.list)
 
     def make_sound(self):
