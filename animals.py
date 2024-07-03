@@ -11,7 +11,7 @@ class Cat:
 
     def bark(self):
         print(f"{self.name}在喵喵叫！")
-    
+
 class Zoo:
     def __init__(self, list):
         self.list = list
