@@ -1,11 +1,8 @@
-# L0 底线用例：函数实现错误
+# L0 底线用例：类方法缺失
 
-from sort import bubble_sort, insertion_sort
+from animals import Zoo, Dog, Cat
 
-nums1 = [5, 3, 8, 2, 1]
+zoo = Zoo([Dog("旺财"), Cat("咪咪")])
 
-sorted1 = bubble_sort(nums1)
-
-assert(sorted1 != None)
-
-print("排序后的数组:", sorted1)
+print("动物园里有：", zoo.len(), " 只动物")
+zoo.make_sound()
