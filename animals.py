@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 class Dog:
     def __init__(self, name):
         self.name = name
@@ -32,6 +34,10 @@ class Zoo:
 
     def __len__(self):
         return len(self.list)
+
+    def append(self, animal):
+        list1 = deepcopy(self.list)
+        list1.append(animal)
 
     def make_sound(self):
         for animal in self.list:
